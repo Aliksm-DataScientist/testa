@@ -38,8 +38,8 @@ jobs:
       # Step 5: Push Docker Image to Docker Hub
       - name: Push Docker Image to Docker Hub
         run: |
-          docker tag aliksm/my-docker-image aliksm/my-docker-image:latest
-          docker push aliksm/my-docker-image:latest
+          docker tag aliksm/my-docker-image aliksm/my-docker-image:v1
+          docker push aliksm/my-docker-image:v1
 
   integration:
     name: Continuous Integration
